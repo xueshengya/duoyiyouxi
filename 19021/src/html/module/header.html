@@ -1,0 +1,97 @@
+
+    <header>
+        <div class="top-red"></div>
+        <div class="header-wrap">
+            <a href="/index.html"><div class="logo"></div></a>
+            <div class="qrcode">
+                <div class="qrcode-2"></div>
+            </div>
+            <div class="header-nav">
+                <ul>
+                    <li class="login" id="login-btn" >
+                        <a href="javascript:;" >登录</a>
+                        <span style="font-size:1px">丨</span>
+                    </li>
+                    
+                    <li class="regist" id="regist-btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                        <a href="javascript:;">注册</a>
+                    </li>
+                    <li id="succ-btn">
+                        欢迎您，<span id="username-btn"></span>
+                        &nbsp;<span id="quit-login">退出</span>
+                    </li>
+                    <div class="my-shopcity">
+                        <li>
+                            
+                            <div class="header-logo"></div>
+                            <a href="javascript:;">
+                                    我的商城
+                            </a> 
+                            <div class="drop-down"></div>
+                            <ul class="abc">
+                                <li><a href="javascript:;">我的订单</a></li>
+                                <li><a href="javascript:;">优惠券</a></li>
+                                <li><a href="javascript:;">我的地址</a></li>
+                            </ul>
+                        </li>
+                     </div>
+                     
+                     <div class="shop-car">
+                            <li>
+                                <div class="header-logo"></div>
+                                <a  href="/html/cart.html">
+                                        购物车
+                                        <!-- /html/cart.html -->
+                                </a> 
+                                <div class="drop-down"></div>
+                                <div class="add-cart" id="add-cart">
+                                    0
+                                </div>
+                            </li>
+                    </div>
+                    <li class="customer">
+                        <a href="javascript:;">客户服务</a>
+                        <div class="drop-down"></div>
+                        <ul id="aaa">
+                            <li><a href="javascript:;">帮助中心</a></li>
+                            <li><a href="javascript:;">客服咨询</a></li>
+                            <li><a href="javascript:;">安全服务</a></li>
+                        </ul>
+                    </li>
+                    <li class="game-rigist">
+                        <a href="javascript:;">游戏目录</a>
+                        <div class="drop-down"></div>
+                        <div class="more-games"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 模态框 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog"        aria-labelledby="myModalLabel">
+        <div id="regist">
+            <div class="header-title">
+                <h3>注册战盟账号</h3>
+                <span class="quit">X</span>
+            </div>
+            <div class="red-nav">
+                <div class="first-regist">
+                    <p>普通账号</p>
+                </div>
+                <div class="second-regist">
+                    <p>2980邮箱</p>
+                </div>
+                <p class="rh-right"><a href="javascipt:;">已注册但未收到验证邮件？</a></p>
+            </div>
+            <form method="POST" id="form">
+                <span class="spans">账号</span><input type="text" placeholder="请输入手机号或常用邮箱" id="username"></br>
+                <span>登录密码</span><input type="password" placeholder="8-16位字母和数字，需包含大小写字母" id="password"></br>
+                <span>确认密码</span><input type="password" placeholder="请再次输入登录密码" id="ok-password"></br>
+                <input type="checkbox" id="checkbox"><span>已阅读并同意<a href="javascript:;">服务条款</a></span></br>
+                <button type="button" id="submit">立即注册</button>
+            </form>
+        </div>
+    </div>
+
+    
+      

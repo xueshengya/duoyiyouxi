@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+    <link href="/../imgaes/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="/css/detail.css">
+    <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.css">
+    <script src="../libs/requirejs/require.js" data-main="/js/detail"></script>
+</head>
+<body>
+    <!-- 头部盒子 -->
+    <div id="header-container"></div>
+    <!-- 主要部分 -->
+    <main id="main-top"></main>
+        <script type="text/html" id="detail-template">
+            <div class="top-wrap">
+            <div class="top-left">
+                    <p><a href="/">>返回首页</a><a href="./list.html">>返回神武3周边</a>>商品详情</p>
+                    <!-- 放大镜大图片盒子 切换 -->
+                <div class="view-bd">
+                    <img class="zoom-img" src="{{data.img[0]}}" data-zoom-image="{{data.img[0]}}"/>
+                </div>
+                    <div id="fdj-wrap" class="view_thumbs">
+                    <ul class="view-ul">
+                        <!-- <li class="big-pic current">
+                            <a href="#" data-image="{{data.img[0]}}" data-zoom-image="{{data.img[0]}}">
+                                <img class="s" src="{{data.img[0]}}"/>
+                            </a>
+                            <span></span>
+                        </li> -->
+                        <li class="min-pic-1">
+                            <a href="#" data-image="{{data.img[0]}}" data-zoom-image="{{data.img[0]}}">
+                            <img class="s" src="{{data.img[0]}}"/></a>
+                        </li>
+                        <li class="min-pic-2">
+                            <a href="#" data-image="{{data.img[1]}}" data-zoom-image="{{data.img[1]}}">
+                            <img class="s" src="{{data.img[1]}}" /></a>
+                        </li>
+                        <li class="min-pic-3">
+                            <a href="#" data-image="{{data.img[2]}}" data-zoom-image="{{data.img[2]}}">
+                            <img  src="{{data.img[2]}}" /></a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+                <div class="top-right">
+                    <p>{{data.title}}</p>
+                    <span>{{data.information}}</span>
+                    <p id="detail-price">￥{{data.price}}</p>
+                    <div class="fuwu"></div>
+                    <div class="number">
+                        <p>数量:</p>
+                        <div id="up">—</div>
+                        <input type="text" id="number">
+                        <div id="down">＋</div>
+                    </div>
+                    <div class="addshop-wrap">
+                        <div id="nowbuy">立即购买</div>
+                        <div id="addcar">加入购物车</div>
+                    </div>
+                </div>
+            </div>
+        <div class= "bottom-wrap">
+            <!-- 产品信息 -->
+            <div class="doctail">产品详情</div>
+            <div class="product-information">
+                <div class="top-information">产品信息/PRODUCT INFORMATION</div>
+                <div class="img-1">
+                        <img src="{{data.img[4]}}" alt="">
+                </div>
+            </div>
+            <!-- 产品展示 -->
+            <div class="product-show">
+                <div class="top-show">产品展示/DETAIL DISPLAY</div>
+                <div class="img-1">
+                        <img src="{{data.img[5]}}" alt="">
+                </div>
+                <div class="img-1">
+                        <img src="{{data.img[6]}}" alt="">
+                </div>
+                <div class="img-1">
+                        <img src="{{data.img[7]}}" alt="">
+                </div>
+            </div>
+            <!-- 实拍展示 -->
+            <div class="product-show real-show">
+                    <div class="top-show">实拍展示/REAL TIME DISPLAY</div>
+                    <div class="img-1">
+                            <img src="{{data.img[8]}}" alt="">
+                    </div>
+                    
+            </div>
+            <!-- 服务说明 -->
+            <div class="product-show real-show server-description">
+                    <img src="/imgaes/serverc.jpg"/>
+            </div>
+        </div>
+    </script>
+    
+    <!-- 底部盒子 -->
+    <div id="footer-container"></div>
+</body>
+</html>

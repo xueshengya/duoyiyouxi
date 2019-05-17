@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的购物车-多益游戏</title>
+    <link href="/../imgaes/favicon.ico" rel="icon" type="image/x-icon">
+    <!-- <link rel="icon" href="../imgaes/favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="/css/cart.css">
+    
+    <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.css">
+    <script src="/libs/requirejs/require.js" data-main="/js/cart"></script>
+</head>
+<body>
+    <!-- 头部盒子 -->
+    <div id="header-container"></div>
+    <!-- 主要部分 -->
+    <main>
+        <div class="wrap">
+            <p><a href="/">＜返回首页</a></p>
+            <div class="back"></div>
+            <div class="addshop">
+                <div class="top">
+                    <input type="checkbox" id="allcheck">
+                    <p>全选</p>
+                    <p>商品信息</p>
+                    <p>单价(元)</p>
+                    <p>数量</p>
+                    <p>小计</p>
+                    <p>操作</p>
+                </div>
+                <!-- 模板盒子 -->
+        <div class="module" id="cart-container">
+                <script type="text/html" id="cart-template">
+                    {{each cart item}}
+                    <div class="center"  data-id="{{item.id}}">
+                    <input type="checkbox" class="checks">
+                    <div class="pic-wrap"><img src="{{item.img[0]}}"></div>
+                    <div class="shop-information">
+                        <p class="title">{{item.title}}</p>
+                        <p class="information">{{item.information}}</p>
+                    </div>
+                    <p class="price">￥<span class="pricespan">{{item.price}}</span></p>
+                    <div class="num">
+                        <div class="num-up">—</div>
+                        <input type="text" class="num-input" value="{{item.num}}">
+                        <div class="num-down">＋</div>
+                        <span>有货</span>
+                    </div>
+                    <p class="tall">￥<span class="tallspan">{{item.price*item.num}}</span></p>
+                    <span class="ac">×</span>
+                </div>
+                {{/each}}
+                </script> 
+        </div>
+                <div class="bottom">
+                    <p class="tallprice"><span id="allshopprice">商品总额</span><span id="tallpr">￥0</span></p>
+                    <div class="formoney">
+                        <p class="goshop"><a href="/">继续购物</a></p>
+                        <div class="fm">去结算</div>
+                    </div>
+                </div>
+            </div>
+        <div class="nullcar-wrap">
+            <div class="nullcar">
+                <div class="pic-car"></div>
+                <p>购物车内暂时没有商品</p>
+                <p><a href="/html/list.html">取购物 ></a></p>
+            </div>
+        </div>    
+        </div>
+    </main>
+    <!-- 底部盒子 -->
+    <div id="footer-container"></div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+@import "module/header.scss";
+@import "module/footer.scss";
+body{
+    background: url("/imgaes/background.jpg") no-repeat;
+    background-position: center 0;
+    background-size: 3000px;
+    #login{
+        width: 460px;
+        height: 490px;
+        
+        background: #ffffff;
+        margin: 200px auto;
+        .login-nav{
+            width: 460px;
+            height: 70px;
+            p{
+                width: 197px;
+                height: 70px;
+                float: left;
+                text-align: center;
+                line-height: 70px;
+                font-size: 18px;
+                &:hover{
+                    border-bottom: 2px solid red;
+                }
+            }
+            span{
+                font-size: 32px;
+                float: right;
+                margin-right: 11px;
+                font-weight: 100;
+            }
+            
+        }
+        .login-form{
+            width: 390px;
+            
+            margin-top: 50px;
+            margin-left: 35px;
+            float: left;
+            .input-wrap{
+                width: 390px;
+                height: 40px;
+                div{
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #ced6dc;
+                    float: left;
+                    position: relative;
+                    span{
+                       
+                        position: absolute;
+
+                        width: 16px;
+                        height: 14px;
+                        background: url("/imgaes/pic56.png")no-repeat;
+                        background-position: -16px -59px;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                }
+                #username1{
+                    width: 348px;
+                    height: 40px;
+                    outline: none;
+                    border: 1px solid #ced6dc;
+                    float: left;
+                    font-size: 14px;
+                    padding-left: 10px;
+                }
+            }
+            .input-wrap-bottom{
+                width: 390px;
+                height: 40px;
+                margin-top: 33px;
+                div{
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #ced6dc;
+                    float: left;
+                    position: relative;
+                    span{
+                        position: absolute;
+                        width: 18px;
+                        height: 16px;
+                        background: url("/imgaes/pic56.png")no-repeat;
+                        background-position: -16px -42px !important;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                }
+                #password1{
+                    width: 348px;
+                    height: 40px;
+                    outline: none;
+                    border: 1px solid #ced6dc;
+                    float: left;
+                    font-size: 14px;
+                    padding-left: 10px;
+                }
+            }
+            #btns{
+                width: 390px;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                color: #ffffff;
+                background: red;
+                margin-top: 33px;
+                font-size: 15px;
+            }
+            #remember{
+                margin-top: 33px;
+                float: left;
+                margin-right: 10px;
+                
+            }
+            p{  
+                margin-top: 29px;
+                color:#ced6dc !important;
+            }
+        }
+        ul{
+            margin-top: 50px;
+            margin-left: 43px;
+            float: left;
+            display: flex;
+            
+            li{
+                border-right: 1px solid #b5b5b5;
+                text-align: center;
+                line-height: 15px;
+                width: 130px;
+                height: 15px;
+                justify-content: space-around;
+                a{
+                    color: #b5b5b5;
+                    
+                }
+            }
+        }
+    }
+}

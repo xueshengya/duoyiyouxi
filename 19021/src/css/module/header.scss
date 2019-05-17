@@ -1,0 +1,489 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+#header-container{
+    width: 100%;
+	min-width: 1152px;
+	// position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #ffffff;
+    box-shadow:0 5px 5px #bfc8d3;
+header{
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    .top-red{
+        width: 100%;
+        height: 5px;
+        background-color:#d51320;
+        };
+    .header-wrap{
+        margin: 0 auto;
+        width: 1152px;
+        height: 55px;
+        
+        .logo{
+            width: 180px;
+            height: 55px;
+            float: left;
+            background: url("/imgaes/logo.png") no-repeat center center;
+        }
+        .qrcode{
+            margin-left: 1.7%;
+            width: 65px;
+            height: 55px;
+            float: left;
+            background: url("/imgaes/qrcode.png") no-repeat center center;
+            position: relative;
+            &:hover{
+                .qrcode-2{
+                    display: inline-block;
+                    z-index: 5;
+                }
+            }
+            .qrcode-2{
+                display: none;
+                width: 400px;
+                height: 110px;
+                
+                position: absolute;
+                top:52px;
+                left: 0px;
+                background: url("/imgaes/1-1.png") no-repeat center center;
+                background-size: 100% 100%;
+            }
+        }
+        .header-nav{
+            // width: 480px;
+            height: 55px;
+            float: right;
+            ul{
+                margin-left: 20px;
+            }
+            li{
+                float: left;
+                margin-top: 20px;
+                a{
+                    font-size: 13px;
+                    color:#666666;
+                    
+                };
+            };
+            .login{
+                a{
+                    color: #7c8b94 ;
+                    &:hover{
+                        color: orangered;
+                    }
+                }
+            }
+            .regist{
+                a{
+                    color: #7c8b94 ;
+                    &:hover{
+                        color: orangered;
+                    }
+                }
+                
+                padding-left: 5px;
+            };
+            #succ-btn{
+                cursor: pointer;
+                display: none;
+                color:  #7c8b94 ;
+                #quit-login{
+                    &:hover{
+                        color: orangered;
+                    }
+                }
+            }
+            .my-shopcity{
+                width: 96px;
+                height: 55px;
+                margin-left: 25px;
+                float: left;
+                position: relative;
+                &:hover{
+                    .abc{
+                        display: inline-block;
+                        z-index: 5;
+                        li{
+                            width: 135px;
+                            height: 36px;
+                            border-bottom: 1px solid #e6e6eb;
+                            margin: 0 2px;
+                            text-align: center;
+                            line-height: 37px;
+                            font-size: 13px;
+                            a{
+                                color: #000000;
+                            }
+                            &:hover{
+                                
+                                    a{
+                                        color:orangered !important;
+                                    }
+                                
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    a{
+                        color: orangered;
+                    }
+                    .header-logo{
+                    width: 18px;
+                    height: 18px;
+                    float: left;
+                    margin-right: 10px;
+                    background: url("/imgaes/images.png")no-repeat center center;
+                    background-position: -379px -103px;
+                    }
+                    .drop-down{
+                        width: 6px;
+                        height: 7px;
+                        float: right;
+                        margin-top: 7px;
+                        background: url("/imgaes/images.png")no-repeat center center;
+                        background-position: -422px -103px;
+                    }
+                    
+                    
+                }
+                li{
+                    width: 96px;
+                    height: 55px;
+                    
+                }
+                .header-logo{
+                    width: 18px;
+                    height: 18px;
+                    float: left;
+                    margin-right: 10px;
+                    background: url("/imgaes/images.png")no-repeat center center;
+                    background-position: -399px -103px;
+                }
+                .drop-down{
+                    width: 6px;
+                    height: 7px;
+                    float: right;
+                    margin-top: 7px;
+                    background: url("/imgaes/images.png")no-repeat center center;
+                    background-position: -422px -112px;
+                };
+                .abc{ display: none;
+                    width: 140px;
+                    height: 110px;
+                    border: 1px solid #e6e6eb;
+                    position: absolute;
+                    top:49px;
+                    left:-41px;
+                    background-color: #ffffff;
+                    
+                    
+                };
+            }
+            .shop-car{
+                cursor: pointer;
+                float: left;
+                margin-left: 25px;
+                position: relative;
+                .add-cart{
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid red;
+                    position: absolute;
+                    top: 10px;
+                    right: -8px;
+                    background-color: orangered;
+                    color: #ffffff;
+                    text-align: center;
+                    line-height: 20px;
+                    font-size: 12px;
+                    border-radius: 50%;
+                }
+                &:hover{
+                    a{
+                     color: orangered;
+                    }
+                    .header-logo{
+                        width: 18px;
+                        height: 18px;
+                        float: left;
+                        margin-right: 8px;
+                        background: url("/imgaes/images.png")no-repeat center center;
+                        background-position: -382px -124px;
+                    }
+                }
+                li{
+                    width: 70px;
+                    height: 35px;
+                .header-logo{
+                    width: 18px;
+                    height: 18px;
+                    float: left;
+                    margin-right: 8px;
+                    background: url("/imgaes/images.png")no-repeat center center;
+                    background-position: -402px -124px;
+                }
+                }
+            }
+            .customer{
+                width: 70px;
+                height: 35px;
+                margin-left: 15px;
+                &:hover{
+                    #aaa{
+                        display: inline-block;
+                        z-index: 5;
+                        li{
+                            width: 135px;
+                            height: 36px;
+                            border-bottom: 1px solid #e6e6eb;
+                            margin: 0 2px;
+                            text-align: center;
+                            line-height: 37px;
+                            font-size: 13px;
+                            a{
+                                color: #000000;
+                            }
+                            &:hover{
+                                
+                                    a{
+                                        color:orangered !important;
+                                    }
+                                
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    a{
+                        color: orangered;
+                    }
+                    .drop-down{
+                        width: 6px;
+                        height: 7px;
+                        float: right;
+                        margin-top: 7px;
+                        background: url("/imgaes/images.png")no-repeat center center;
+                        background-position: -422px -103px;
+                    }
+                }
+            .drop-down{
+                    width: 6px;
+                    height: 7px;
+                    float: right;
+                    margin-top: 7px;
+                    background: url("/imgaes/images.png")no-repeat center center;
+                    background-position: -422px -112px;
+                }
+                 #aaa{ display: none;
+                    
+                    width: 140px;
+                    height: 110px;
+                    border: 1px solid #e6e6eb;
+                    position: absolute;
+                    top:49px;
+                    left:990px;
+                    background-color: #ffffff;
+                };
+            }
+            .game-rigist{
+                width: 70px;
+                height: 35px;
+                margin-left: 15px;
+                position: relative;
+                &:hover{
+                    .more-games{
+                        display:inline-block;
+                        z-index: 5;
+                    }
+                }
+                &:hover{
+                    a{
+                        color: orangered;
+                    }
+                    .drop-down{
+                        width: 6px;
+                        height: 7px;
+                        float: right;
+                        margin-top: 7px;
+                        background: url("/imgaes/images.png")no-repeat center center;
+                        background-position: -422px -103px;
+                    }
+                }
+            .drop-down{
+                    width: 6px;
+                    height: 7px;
+                    float: right;
+                    margin-top: 7px;
+                    background: url("/imgaes/images.png")no-repeat center center;
+                    background-position: -422px -112px;
+                }
+                .more-games{
+                    display: none;
+                    position: absolute;
+                    z-index: 5;
+                    width: 516px;
+                    height: 484px;
+                    
+                    top: 34px;
+                    left: -446px;
+                    background: url("/imgaes/1-2.png") no-repeat center center;
+                    background-size: 100% 100%;
+                }
+            }
+            }
+        }
+        
+    }
+    #regist{
+        width: 462px;
+        height: 431px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        .header-title{
+            width: 462px;
+            height: 65px;
+            h3{
+                width: 122px;
+                height: 20px;
+                float: left;
+                font-size: 20px;
+                margin-left: 56px;
+                
+                line-height: 30px;
+            }
+            .quit{
+                float: right;
+                font-size: 18px;
+                margin-right: 11px;
+                margin-top: 11px;
+            }
+        };
+        .red-nav{
+            width: 462px;
+            height: 30px;
+            background-color: red;
+            text-align: center;
+                line-height: 30px;
+            .first-regist{
+                width: 75px;
+                height: 28px;
+                text-align: center;
+                line-height: 30px;
+                margin-top: 2px;
+                float: left;
+                margin-left: 35px;
+                color: #ffffff;
+                &:hover{
+                    background-color: #ffffff;
+                     color: black;
+                }
+            }
+            .second-regist{
+                width: 75px;
+                height: 28px;
+                text-align: center;
+                line-height: 30px;
+                margin-top: 2px;
+                float: left;
+                color: #ffffff;
+                &:hover{
+                    background-color: #ffffff;
+                    color: black;
+                }
+            };
+            .rh-right{
+                float:right;
+                margin-right: 35px;
+                a{
+                    color: #ffffff;
+                    border-bottom: 1px solid #ffffff;
+                }
+            };
+            
+        }
+        #form{
+            width: 378px;
+            height: 273px;
+            margin-left: 57px;
+            margin-top: 33px;
+            span{
+                color: #000000;
+                font-size: 12px;
+                margin-right: 10px;
+            }
+            .spans{
+                margin-left: 24px;
+            }
+            #username{
+                width: 272px;
+                height: 40px;
+                border: 1px solid #ced6dc;
+                color: #ced6dc;
+                margin-bottom: 25px;
+                border-radius: 5px;
+            }
+            #password{
+                width: 272px;
+                height: 40px;
+                border: 1px solid #ced6dc;
+                color: #ced6dc;
+                margin-bottom: 25px;
+                border-radius: 5px;
+            }
+            #ok-password{
+                width: 272px;
+                height: 40px;
+                border: 1px solid #ced6dc;
+                color: #ced6dc;
+                margin-bottom: 25px;
+                border-radius: 5px;
+            }
+            #checkbox{
+                width: 15px;
+                height: 15px;
+                margin-left: 58px;
+                float: left;
+                span{
+                    a{
+                        color:red;
+                        border-bottom: 1px solid red;
+                    }
+                }
+            }
+            #submit{
+                width: 350px;
+                height: 40px;
+                border: none;
+                background-color: red;
+                color: #ffffff;
+                font-size: 16px;
+                margin-top: 16px;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+}
