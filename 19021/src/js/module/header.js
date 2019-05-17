@@ -7,6 +7,7 @@ define(["jquery","url","bootstrap","cookie"],($,url)=>{
         this.load().then(()=>{
             this.isLogin();
             this.cartall();
+            this.rescheck();
         })
         this.rejist();
         this.login();
@@ -33,7 +34,8 @@ define(["jquery","url","bootstrap","cookie"],($,url)=>{
                     submit=$("#submit"),
                     checkbox=$("#checkbox"),
                     quit=$(".quit");
-                    console.log(checkbox);
+                    
+                console.log(username);
                console.log(quit);
                quit.on("click",()=>{
                    quit.attr("data-dismiss","modal");
@@ -116,8 +118,23 @@ define(["jquery","url","bootstrap","cookie"],($,url)=>{
                 num = num + shop.num;
             });
             $("#add-cart").html(num);
+        },
+        // 正则验证
+        rescheck(){
+            let username =  $("#username"),
+                password = $("#password"),
+                telphone = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/,
+                email = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+                
+                password.on("click",()=>{
+                     let usernameval = username.val();
+                        if(telphone.test(usernameval)||email.test(usernameval)){
+                            alert("用户名正确")
+                        }else{
+                            alert("请输入正确的手机号或者常用邮箱")
+                        }
+                })
         }
-    
     })
    return  new Header();
 })
