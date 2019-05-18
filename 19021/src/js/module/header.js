@@ -126,14 +126,33 @@ define(["jquery","url","bootstrap","cookie"],($,url)=>{
                 telphone = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/,
                 email = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
                 
+                
                 password.on("click",()=>{
-                     let usernameval = username.val();
+                     let usernameval = username.val(),
+                         truea =$("#ccc"),
+                         istruea =$("#bbb"),
+                         nulls = $("#eee");
+                     console.log(istruea)
                         if(telphone.test(usernameval)||email.test(usernameval)){
-                            alert("用户名正确")
+                            istruea.hide();
+                            truea.show();
+                            nulls.hide();
                         }else{
-                            alert("请输入正确的手机号或者常用邮箱")
+                            istruea.html("*请输入正确手机号码或者常用邮箱");
+                            truea.hide();
+                            istruea.show();
+                            nulls.hide();
                         }
                 })
+               username.on("focus",()=>{
+                let truea =$("#ccc"),
+                    istruea =$("#bbb"),
+                    nulls = $("#eee");
+                    console.log(nulls)
+                    istruea.hide();
+                    nulls.show();
+                    truea.hide();
+               })
         }
     })
    return  new Header();
